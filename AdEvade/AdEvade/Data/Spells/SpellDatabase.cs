@@ -191,7 +191,7 @@ public static class SpellDatabase
                 Range = 1500,
                 SpellDelay = 250,
                 SpellKey = SpellSlot.Q,
-                SpellName = "TaliyahQ",
+                SpellName = "AurelionSolQ",
                 SpellType = SpellType.Line,
                
 
