@@ -3415,7 +3415,22 @@ public static class SpellDatabase
                 SpellName = "ZedQ",
                 SpellType = SpellType.Line,
             });
+            
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Zed",
+                Dangerlevel = SpellDangerLevel.High,
 
+                Name = "ZedQ",                
+                ProjectileSpeed = 1750,
+                Radius = 250,
+                Range = 700,
+                SpellDelay = 0,
+                SpellKey = SpellSlot.W,
+                SpellName = "ZedW",
+                SpellType = SpellType.Line,
+            });
             /*Spells.Add(
             new SpellData
             {
