@@ -2777,6 +2777,42 @@ public static class SpellDatabase
             });
 
             #endregion TahmKench
+            
+            #region Taliyah
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Taliyah",
+                Dangerlevel = SpellDangerLevel.Normal,
+                MissileName = "TaliyahQMis",
+                Name = "TaliyahQ",
+                ProjectileSpeed = 1450,
+                Radius = 100,
+                Range = 1000,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.Q,
+                SpellName = "TaliyahQ",
+                SpellType = SpellType.Line,
+                CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions },
+
+            });
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Taliyah",
+                Dangerlevel = SpellDangerLevel.High,
+                Name = "TaliyahW",
+                Radius = 150,
+                Range = 900,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.E,
+                SpellName = "TaliyahW",
+                SpellType = SpellType.Circular,
+
+            });
+            #endregion Taliyah
 
             #region Talon
 
