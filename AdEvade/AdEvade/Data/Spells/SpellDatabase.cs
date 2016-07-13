@@ -176,6 +176,44 @@ public static class SpellDatabase
 
             });
             #endregion Amumu
+            
+            #region AurelionSol
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "AurelionSol",
+                Dangerlevel = SpellDangerLevel.Normal,
+                MissileName = "AurelionSolQMissile",
+                Name = "AurelionSolQ",
+                ProjectileSpeed = 850,
+                Radius = 180,
+                Range = 1500,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.Q,
+                SpellName = "TaliyahQ",
+                SpellType = SpellType.Line,
+               
+
+            });
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "AurelionSol",
+                Dangerlevel = SpellDangerLevel.Normal,
+                MissileName = "AurelionSolRBeamMissile",
+                Name = "AurelionSolR",
+                ProjectileSpeed = 4600,
+                Radius = 120,
+                Range = 1420,
+                SpellDelay = 300,
+                SpellKey = SpellSlot.R,
+                SpellName = "AurelionSolR",
+                SpellType = SpellType.Line,
+               
+            });
+            #endregion AurelionSol
 
             #region Anivia
 
@@ -3157,7 +3195,7 @@ public static class SpellDatabase
                 Dangerlevel = SpellDangerLevel.Normal,
                 MissileName = "ViktorDeathRayMissile",
                 Name = "ViktorDeathRay",
-                ProjectileSpeed = 780,
+                ProjectileSpeed = 1050,
                 Radius = 80,
                 Range = 800,
                 SpellKey = SpellSlot.E,
@@ -3226,7 +3264,7 @@ public static class SpellDatabase
                 Name = "VladimirHemoplague",
                 Radius = 375,
                 Range = 700,
-                SpellDelay = 389,
+                SpellDelay = 250,
                 SpellKey = SpellSlot.R,
                 SpellName = "VladimirHemoplague",
                 SpellType = SpellType.Circular,
