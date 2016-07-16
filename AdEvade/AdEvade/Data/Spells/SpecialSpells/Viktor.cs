@@ -17,7 +17,7 @@ namespace AdEvade.Data.Spells.SpecialSpells
         }
         public void LoadSpecialSpell(SpellData spellData)
         {
-            if (spellData.SpellName == "ViktorDeathRay3")
+            if (spellData.SpellName == "ViktorDeathRay")
             {
                 GameObject.OnCreate += OnCreateObj_ViktorDeathRay3;
             }
