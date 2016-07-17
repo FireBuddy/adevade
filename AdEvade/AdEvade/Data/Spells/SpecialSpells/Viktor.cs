@@ -32,8 +32,8 @@ namespace AdEvade.Data.Spells.SpecialSpells
                 args.SData.Name != null && args.SData.Name == "ViktorDeathRay")
             
             {
-               .// var End = enemy.GetWaypoints().Last();
-                var missileDist = End.To2D().Distance(args.Start.To2D());
+               . var End = new vector3 => enemy.GetWaypoints().Last();
+            //    var missileDist = End.To2D().Distance(args.Start.To2D());
               //  var delay = missileDist / 1.5f + 600;
         
              //   spellData.SpellDelay = delay;
