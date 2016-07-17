@@ -17,32 +17,28 @@ namespace AdEvade.Data.Spells.SpecialSpells
         }
         public void LoadSpecialSpell(SpellData spellData)
         {
-            if (spellData.SpellName == "ViktorDeathRay3")
+            if (spellData.SpellName == "ViktorDeathRay")
             {
-                GameObject.OnCreate += OnCreateObj_ViktorDeathRay3;
+                 Obj_AI_Base.OnProcessSpellCast += Obj_AI_Base_OnProcessSpellCast3;
             }
         }
 
-        private static void OnCreateObj_ViktorDeathRay3(GameObject obj, EventArgs args)
+        private static void Obj_AI_Base_OnProcessSpellCast3(Obj_AI_Base sender, GameObjectProcessSpellCastEventArgs args)
         {
-            if (obj.GetType() != typeof(MissileClient) || !((MissileClient) obj).IsValidMissile())
-                return;
 
-            MissileClient missile = (MissileClient)obj;
+  
 
-            SpellData spellData;
-
-            if (missile.SpellCaster != null && missile.SpellCaster.Team != ObjectManager.Player.Team &&
-                missile.SData.Name != null && missile.SData.Name == "viktoreaugmissile"
-                && SpellDetector.OnMissileSpells.TryGetValue("ViktorDeathRay3", out spellData)
-                && missile.StartPosition != null && missile.EndPosition != null)
+            if (sender != null && sender.Team != ObjectManager.Player.Team &&
+                args.SData.Name != null && args.SData.Name == "ViktorDeathRay")
+            enemy.GetWaypoints().
             {
-                var missileDist = missile.EndPosition.To2D().Distance(missile.StartPosition.To2D());
+                var End = enemy.GetWaypoints().Last();
+                var missileDist = End.To2D().Distance(args.Start.To2D());
                 var delay = missileDist / 1.5f + 600;
-
+        
                 spellData.SpellDelay = delay;
 
-                SpellDetector.CreateSpellData(missile.SpellCaster, missile.StartPosition, missile.EndPosition, spellData);
+                SpellDetector.CreateSpellData(sender, args.Start, End, spellData);
             }
         }
     }
