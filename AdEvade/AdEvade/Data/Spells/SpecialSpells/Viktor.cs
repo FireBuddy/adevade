@@ -30,7 +30,7 @@ namespace AdEvade.Data.Spells.SpecialSpells
 
             if (sender != null && sender.Team != ObjectManager.Player.Team &&
                 args.SData.Name != null && args.SData.Name == "ViktorDeathRay")
-            enemy.GetWaypoints().
+            
             {
                 var End = enemy.GetWaypoints().Last();
                 var missileDist = End.To2D().Distance(args.Start.To2D());
