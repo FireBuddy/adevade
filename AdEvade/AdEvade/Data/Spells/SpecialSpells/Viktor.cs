@@ -32,7 +32,7 @@ namespace AdEvade.Data.Spells.SpecialSpells
                 args.SData.Name != null && args.SData.Name == "ViktorDeathRay")
             
             {
-                  var endpoint = sender.Path.Last();
+                  var endpoint = sender.Path;
             //    var missileDist = End.To2D().Distance(args.Start.To2D());
               //  var delay = missileDist / 1.5f + 600;
         
