@@ -761,7 +761,7 @@ namespace AdEvade
                     if (!ConfigValue.ClickOnlyOnce.GetBool() || !(GameData.MyHero.Path.Length > 0 && LastPosInfo.Position.Distance(GameData.MyHero.Path.Last().To2D()) < 5))
                         //|| lastPosInfo.timestamp > lastEvadeOrderTime)
                     {
-                       // EvadeCommand.MoveTo(lastBestPosition);
+                        EvadeCommand.MoveTo(lastBestPosition);
                         LastEvadeOrderTime = EvadeUtils.TickCount;
                     }
                 }
