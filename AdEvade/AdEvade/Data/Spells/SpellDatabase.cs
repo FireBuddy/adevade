@@ -402,7 +402,7 @@ public static class SpellDatabase
                 Range = 1100,
                 SpellDelay = 250,
                 SpellKey = SpellSlot.Q,
-                SpellName = "BrandBlaze",
+                SpellName = "BrandQ",
                 SpellType = SpellType.Line,
                 CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions },              
             });
@@ -417,7 +417,7 @@ public static class SpellDatabase
                 Range = 1100,
                 SpellDelay = 850,
                 SpellKey = SpellSlot.W,
-                SpellName = "BrandFissure",
+                SpellName = "BrandW",
                 SpellType = SpellType.Circular,
 
             });
