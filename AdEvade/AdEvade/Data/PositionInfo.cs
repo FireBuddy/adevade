@@ -181,10 +181,10 @@ namespace AdEvade.Data
                 var movePos = path[path.Length - 1].To2D();
                 posInfo = EvadeHelper.CanHeroWalkToPos(movePos, GameData.HeroInfo.MoveSpeed, 0, 0, false);
             }
-            else
-            {
-                posInfo = EvadeHelper.CanHeroWalkToPos(GameData.HeroInfo.ServerPos2D, GameData.HeroInfo.MoveSpeed, 0, 0, false);
-            }
+            //else
+            //{
+             //   posInfo = EvadeHelper.CanHeroWalkToPos(GameData.HeroInfo.ServerPos2D, GameData.HeroInfo.MoveSpeed, 0, 0, false);
+           // }
 
             if (posInfo.PosDangerCount < newPosInfo.PosDangerCount)
             {
