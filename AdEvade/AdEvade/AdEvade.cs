@@ -644,7 +644,7 @@ namespace AdEvade
                     {
                         var movePos = path.Last().To2D();
 
-                        if (movePos.Distance(LastPosInfo.Position) < 5) //more strict checking
+                        if (movePos.Distance(LastPosInfo.Position) < 100) //more strict checking
                         {
                             var posInfo = EvadeHelper.CanHeroWalkToPos(movePos, GameData.HeroInfo.MoveSpeed, 0, 0, false);
                             if (posInfo.PosDangerCount > LastPosInfo.PosDangerCount)
