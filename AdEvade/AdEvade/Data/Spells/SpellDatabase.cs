@@ -308,23 +308,24 @@ public static class SpellDatabase
 
             #region Azir
 
-            //Spells.Add(
-            //new SpellData
-            //{
-            //    CharName = "Azir",
-            //    Dangerlevel = SpellDangerLevel.Normal,
-            //    Name = "AzirQ",
-            //    ProjectileSpeed = 1000,
-            //    Radius = 80,
-            //    Range = 800,
-            //    SpellDelay = 250,
-            //    SpellKey = SpellSlot.Q,
-            //    SpellName = "AzirQ",
-            //    SpellType = SpellType.Line,
-            //    UsePackets = true,
-            //    IsSpecial = true,
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Azir",
+                Dangerlevel = SpellDangerLevel.Normal,
+                MissileName = "AzirSoldierMissile",
+                Name = "AzirQ",
+                ProjectileSpeed = 1000,
+                Radius = 200,
+                Range = 850,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.Q,
+                SpellName = "AzirQ",
+                SpellType = SpellType.Line,
 
-            //});
+
+
+            });
             #endregion Azir
 
             #region Bard
