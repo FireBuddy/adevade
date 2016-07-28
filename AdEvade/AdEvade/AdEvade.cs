@@ -848,7 +848,7 @@ namespace AdEvade
 
         public static void SetAllUndodgeable()
         {
-            LastPosInfo = PositionInfo.SetAllUndodgeable();
+            //LastPosInfo = PositionInfo.SetAllUndodgeable();
         }
 
         private void SpellDetector_OnProcessDetectedSpells()
