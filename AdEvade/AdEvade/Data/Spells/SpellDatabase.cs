@@ -2846,7 +2846,7 @@ public static class SpellDatabase
                 Radius = 150,
                 Range = 900,
                 SpellDelay = 250,
-                SpellKey = SpellSlot.E,
+                SpellKey = SpellSlot.W,
                 SpellName = "TaliyahW",
                 SpellType = SpellType.Circular,
 
