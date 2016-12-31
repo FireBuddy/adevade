@@ -3737,16 +3737,15 @@ public static class SpellDatabase
                 new SpellData
                 {
                     CharName = "Zac",
-                    Dangerlevel = SpellDangerLevel.Normal,
+                    Dangerlevel = SpellDangerLevel.High,
                     Name = "ZacQ",
                     ProjectileSpeed = float.MaxValue,
                     FixedRange = true,
                     Radius = 120,
                     Range = 550,
-                    SpellDelay = 500,
+                    SpellDelay = 400,
                     SpellKey = SpellSlot.Q,
                     SpellName = "ZacQ",
-                    ExtraSpellNames = new[] {"YasuoQ2", "YasuoQ2W"},
                     SpellType = SpellType.Line
                 });
 
