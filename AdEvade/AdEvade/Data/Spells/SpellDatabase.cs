@@ -3333,7 +3333,7 @@ public static class SpellDatabase
             });
             #endregion Urgot
 
-            /*#region Varus
+            #region Varus
 
             Spells.Add(
             new SpellData
@@ -3441,7 +3441,7 @@ public static class SpellDatabase
 
             #endregion Veigar
 
-            #region Velkoz
+            /*#region Velkoz
 
             Spells.Add(
             new SpellData
