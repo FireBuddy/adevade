@@ -3712,7 +3712,7 @@ public static class SpellDatabase
                 FixedRange = true,
             });
 
-            Spells.Add(
+            /*Spells.Add(
             new SpellData
             {
                 CharName = "Yasuo",
@@ -3729,7 +3729,7 @@ public static class SpellDatabase
                 ExtraSpellNames = new [] {"YasuoQ2", "YasuoQ2W" },
                 SpellType = SpellType.Line
                 FixedRange = true,
-            });
+            });*/
 
             #endregion Yasuo
 
