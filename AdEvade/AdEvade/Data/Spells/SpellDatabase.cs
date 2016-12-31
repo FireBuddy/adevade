@@ -1763,13 +1763,13 @@ public static class SpellDatabase
                 Dangerlevel = SpellDangerLevel.Normal,
                 MissileName = "khazixe",
                 name = "Leap",
-                projectileSpeed = 1200,
-                radius = 300,
-                range = 700,
+                ProjectileSpeed = 1200,
+                Radius = 300,
+                Range = 700,
                 spellDelay = 0,
-                spellKey = SpellSlot.E,
-                spellName = "KhazixE",
-                spellType = SpellType.Circular
+                SpellKey = SpellSlot.E,
+                SpellName = "KhazixE",
+                SpellType = SpellType.Circular,
             });
             #endregion Khazix
 
