@@ -3533,7 +3533,7 @@ public static class SpellDatabase
             });
             #endregion Vi
 
-            /*#region Viktor
+            #region Viktor
 
             Spells.Add(
             new SpellData
@@ -3587,7 +3587,7 @@ public static class SpellDatabase
 
             });*/
 
-            /*Spells.Add(
+            Spells.Add(
             new SpellData
             {
                 CharName = "Viktor",
@@ -3604,7 +3604,7 @@ public static class SpellDatabase
 
             #endregion Viktor
 
-            #region Vladimir
+            /*#region Vladimir
 
             Spells.Add(
             new SpellData
