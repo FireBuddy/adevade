@@ -63,7 +63,7 @@ public static class SpellDatabase
                 Range = 1075,
                 SpellDelay = 250,
                 SpellKey = SpellSlot.E,
-                SpellName = "AatroxE",
+                SpellName = "AatroxEConeMissile",
                 SpellType = SpellType.Line,
 
             });
@@ -320,7 +320,7 @@ public static class SpellDatabase
                 Range = 850,
                 SpellDelay = 250,
                 SpellKey = SpellSlot.Q,
-                SpellName = "AzirQ",
+                SpellName = "AzirQWrapper",
                 SpellType = SpellType.Line,
 
 
@@ -506,11 +506,11 @@ public static class SpellDatabase
                 CharName = "Cassiopeia",
                 Dangerlevel = SpellDangerLevel.Extreme,
                 Name = "CassiopeiaPetrifyingGaze",
-                Radius = 20,
+                Radius = 145,
                 Range = 825,
                 SpellDelay = 500,
                 SpellKey = SpellSlot.R,
-                SpellName = "CassiopeiaPetrifyingGaze",
+                SpellName = "CassiopeiaR",
                 SpellType = SpellType.Cone,
 
             });
@@ -522,10 +522,10 @@ public static class SpellDatabase
                 Dangerlevel = SpellDangerLevel.Low,
                 Name = "CassiopeiaNoxiousBlast",
                 Radius = 200,
-                Range = 600,
-                SpellDelay = 825,
+                Range = 850,
+                SpellDelay = 750,
                 SpellKey = SpellSlot.Q,
-                SpellName = "CassiopeiaNoxiousBlast",
+                SpellName = "CassiopeiaQ",
                 SpellType = SpellType.Circular,
 
             });
@@ -931,7 +931,7 @@ public static class SpellDatabase
                 Range = 550,
                 SpellDelay = 0,
                 SpellKey = SpellSlot.Q,
-                SpellName = "FizzPiercingStrike",
+                SpellName = "FizzQ",
                 SpellType = SpellType.Line,
                 IsSpecial = true,
 
@@ -946,10 +946,10 @@ public static class SpellDatabase
                 Name = "Fizz ULT",
                 ProjectileSpeed = 1350,
                 Radius = 120,
-                Range = 1275,
+                Range = 1300,
                 SpellDelay = 250,
                 SpellKey = SpellSlot.R,
-                SpellName = "FizzMarinerDoom",
+                SpellName = "FizzR",
                 SpellType = SpellType.Line,
                 CollisionObjects = new[] { CollisionObjectType.EnemyChampions, },
                 //HasEndExplosion = true,
@@ -1174,7 +1174,7 @@ public static class SpellDatabase
                 ExtraMissileNames = new [] { "GravesQReturn" },
                 Name = "Buckshot",
                 ProjectileSpeed = 3000,
-                Radius = 60,
+                Radius = 75,
                 Range = 825,
                 SpellDelay = 250,
                 SpellKey = SpellSlot.Q,
@@ -1215,8 +1215,14 @@ public static class SpellDatabase
                 Range = 1500,
                 SpellDelay = 10,
                 SpellKey = SpellSlot.R,
-                SpellName = "HecarimUlt",
+                SpellName = "HecarimUltMissile",
                 SpellType = SpellType.Line,
+                ExtraMissileNames = 
+                        new []     
+                        {
+                        "HecarimUltMissileSkn4R1", "HecarimUltMissileSkn4c", "HecarimUltMissileSkn4R2",
+                        "HecarimUltMissileSKn4L2", "HecarimUltMissileSkn4L1"
+                        },
 
             });
             #endregion Hecarim
@@ -1360,6 +1366,26 @@ public static class SpellDatabase
                 DefaultOff = true,
             });
             #endregion Irelia
+            
+            #region Ivern
+         
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Ivern",                  
+                Dangerlevel = SpellDangerLevel.Normal,
+                Name = "Rootcaller",
+                ProjectileSpeed = 1300,
+                Radius = 65,
+                Range = 1150,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.Q,
+                SpellName = "IvernQ",
+                SpellType = SpellType.Line,
+                CollisionObjects = new[] { CollisionObjectType.EnemyMinions, CollisionObjectType.EnemyChampions },
+            });
+
+            #endregion Ivern
 
             #region Janna
 
@@ -1442,38 +1468,38 @@ public static class SpellDatabase
                 Dangerlevel = SpellDangerLevel.High,
                 MissileName = "JayceShockBlastMis",
                 Name = "JayceShockBlastCharged",
-                ProjectileSpeed = 2350,
+                ProjectileSpeed = 1450,
                 Radius = 70,
-                Range = 1570,
+                Range = 1170,
                 SpellDelay = 250,
                 SpellKey = SpellSlot.Q,
-                SpellName = "JayceShockBlast",
+                SpellName = "jayceshockblastmis",
                 SpellType = SpellType.Line,
                 CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions },
                 HasEndExplosion = true,
-                SecondaryRadius = 250,
+                SecondaryRadius = 210,
 
             });
 
-            /*Spells.Add(
+            Spells.Add(
             new SpellData
             {
                 CharName = "Jayce",
                 Dangerlevel = SpellDangerLevel.Normal,
                 MissileName = "JayceShockBlastMis",
                 Name = "JayceShockBlast",
-                ProjectileSpeed = 1450,
+                ProjectileSpeed = 2350,
                 Radius = 70,
-                Range = 1050,
+                Range = 1600,
                 SpellDelay = 250,
                 SpellKey = SpellSlot.Q,
-                SpellName = "jayceshockblast",
+                SpellName = "jayceshockblastwallmis",
                 SpellType = SpellType.Line,
                 CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions },
                 HasEndExplosion = true,
-                SecondaryRadius = 175,
-
-            });*/
+                SecondaryRadius = 210,
+                FixedRange = true,
+            });
             #endregion Jayce
 
             #region Jinx
@@ -1491,6 +1517,7 @@ public static class SpellDatabase
                 SpellKey = SpellSlot.R,
                 SpellName = "JinxR",
                 SpellType = SpellType.Line,
+                FixedRange = true,
                 //CollisionObjects = new[] { CollisionObjectType.EnemyChampions, },
             });
 
@@ -1509,7 +1536,7 @@ public static class SpellDatabase
                 SpellName = "JinxWMissile",
                 SpellType = SpellType.Line,
                 CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions },
-
+                FixedRange = true,
             });
             #endregion Jinx
 
@@ -1520,12 +1547,12 @@ public static class SpellDatabase
             {
                 CharName = "Jhin",
                 Dangerlevel = SpellDangerLevel.High,
-                MissileName = "JhinWMissile",
+                //MissileName = "JhinWMissile",
                 Name = "JhinW",
-                ProjectileSpeed = 5000,
+                ProjectileSpeed = 2550,
                 Radius = 40,
                 Range = 2250,
-                SpellDelay = 750,
+                SpellDelay = 650,
                 SpellKey = SpellSlot.W,
                 SpellName = "JhinW",
                 SpellType = SpellType.Line,
@@ -1564,15 +1591,15 @@ public static class SpellDatabase
                 Dangerlevel = SpellDangerLevel.Normal,
                 MissileName = "kalistamysticshotmistrue",
                 Name = "KalistaQ",
-                ProjectileSpeed = 2000,
-                Radius = 70,
+                ProjectileSpeed = 1700,
+                Radius = 45,
                 Range = 1200,
-                SpellDelay = 350,
+                SpellDelay = 250,
                 SpellKey = SpellSlot.Q,
                 SpellName = "KalistaMysticShot",
                 SpellType = SpellType.Line,
                 CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions },
-
+                FixedRange = true,
             });
             #endregion Kalista
 
@@ -1586,14 +1613,14 @@ public static class SpellDatabase
                 MissileName = "KarmaQMissile",
                 Name = "KarmaQ",
                 ProjectileSpeed = 1700,
-                Radius = 90,
+                Radius = 60,
                 Range = 1050,
                 SpellDelay = 250,
                 SpellKey = SpellSlot.Q,
                 SpellName = "KarmaQ",
                 SpellType = SpellType.Line,
                 CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions },
-
+                fixedRange = true
             });
 
             Spells.Add(
@@ -1604,15 +1631,14 @@ public static class SpellDatabase
                 MissileName = "KarmaQMissileMantra",
                 Name = "KarmaQMantra",
                 ProjectileSpeed = 1700,
-                Radius = 90,
+                Radius = 80,
                 Range = 1050,
                 SpellDelay = 250,
                 SpellKey = SpellSlot.Q,
                 SpellName = "KarmaQMissileMantra",
                 SpellType = SpellType.Line,
-                UsePackets = true,
                 CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions },
-
+                SecondaryRadius = 250
             });
             #endregion Karma
 
@@ -1626,7 +1652,7 @@ public static class SpellDatabase
                 Name = "Lay Waste",
                 Radius = 190,
                 Range = 875,
-                SpellDelay = 900,
+                SpellDelay = 625,
                 SpellKey = SpellSlot.Q,
                 SpellName = "KarthusLayWasteA1",
                 SpellType = SpellType.Circular,
@@ -1660,7 +1686,7 @@ public static class SpellDatabase
                 CharName = "Kassadin",
                 Dangerlevel = SpellDangerLevel.Normal,
                 Name = "ForcePulse",
-                Radius = 20,
+                Radius = 80,
                 Range = 700,
                 SpellDelay = 250,
                 SpellKey = SpellSlot.E,
@@ -1681,13 +1707,13 @@ public static class SpellDatabase
                 Name = "Thundering Shuriken",
                 ProjectileSpeed = 1700,
                 Radius = 50,
-                Range = 1175,
-                SpellDelay = 180,
+                Range = 1050,
+                SpellDelay = 125,
                 SpellKey = SpellSlot.Q,
                 SpellName = "KennenShurikenHurlMissile1",
                 SpellType = SpellType.Line,
                 CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions },
-
+                fixedRange = true
             });
             #endregion Kennen
 
@@ -1728,6 +1754,22 @@ public static class SpellDatabase
                 SpellType = SpellType.Line,
                 CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions },
 
+            });
+            
+                Spells.Add(
+                new SpellData
+                {
+                CharName = "Khazix",
+                Dangerlevel = SpellDangerLevel.Normal,
+                MissileName = "khazixe",
+                name = "Leap",
+                projectileSpeed = 1200,
+                radius = 300,
+                range = 700,
+                spellDelay = 0,
+                spellKey = SpellSlot.E,
+                spellName = "KhazixE",
+                spellType = SpellType.Circular
             });
             #endregion Khazix
 
@@ -3197,13 +3239,14 @@ public static class SpellDatabase
                 MissileName = "ViktorDeathRayMissile",
                 Name = "ViktorDeathRay",
                 ProjectileSpeed = 1050,
-                Radius = 80,
-                Range = 800,
+                Radius = 75,
+                Range = 815,
                 SpellKey = SpellSlot.E,
                 SpellName = "ViktorDeathRay",
                 ExtraMissileNames = new[] { "ViktorEAugMissile", },
                 SpellType = SpellType.Line,
                 UsePackets = true,
+                FixedRange = true,
             });
 
             Spells.Add(
