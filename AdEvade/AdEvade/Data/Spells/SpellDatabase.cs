@@ -2852,64 +2852,7 @@ public static class SpellDatabase
 
             #endregion Shen
 
-            #region Shyvana
-
-            Spells.Add(
-            new SpellData
-            {
-                CharName = "Shyvana",
-                Dangerlevel = SpellDangerLevel.Low,
-                MissileName = "ShyvanaFireballMissile",
-                Name = "ShyvanaFireball",
-                ProjectileSpeed = 1700,
-                Radius = 60,
-                Range = 950,
-                SpellDelay = 250,
-                SpellKey = SpellSlot.E,
-                SpellName = "ShyvanaFireball",
-                SpellType = SpellType.Line,
-                FixedRange = true,
-
-            });
-
-            Spells.Add(
-            new SpellData
-            {
-                CharName = "Shyvana",
-                Dangerlevel = SpellDangerLevel.High,
-                IsThreeWay = true,
-                MissileName = "ShyvanaFireballDragonFxMissile",
-                Name = "Flame Breath Dragon",
-                ProjectileSpeed = 2000,
-                Radius = 70,
-                Range = 850,
-                SpellDelay = 250,
-                ExtraEndTime = 200,
-                SpellKey = SpellSlot.R,
-                SpellName = "shyvanafireballdragon2",
-                SpellType = SpellType.Line,
-
-            });
             
-            Spells.Add(
-            new SpellData
-            {
-                CharName = "Shyvana",
-                Dangerlevel = SpellDangerLevel.High,
-                MissileName = "ShyvanaTransformCast",
-                Name = "Dragon's Descent",
-                ProjectileSpeed = 1250,
-                Radius = 160,
-                Range = 1000,
-                SpellDelay = 250,
-                SpellKey = SpellSlot.R,
-                SpellName = "ShyvanaTransformCast",
-                SpellType = SpellType.Line,
-
-            });
-            
-            
-            #endregion Shyvana
             
             #region Sion
 
