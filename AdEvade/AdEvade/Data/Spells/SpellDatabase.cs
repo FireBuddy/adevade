@@ -3441,7 +3441,7 @@ public static class SpellDatabase
 
             #endregion Veigar
 
-            /*#region Velkoz
+            #region Velkoz
 
             Spells.Add(
             new SpellData
@@ -3533,7 +3533,7 @@ public static class SpellDatabase
             });
             #endregion Vi
 
-            #region Viktor
+            /*#region Viktor
 
             Spells.Add(
             new SpellData
