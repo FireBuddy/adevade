@@ -2795,41 +2795,29 @@ public static class SpellDatabase
 
             #endregion Ryze
 
-            #region Sejuani
+
+            
+                
+            #region Shen
+
             Spells.Add(
             new SpellData
             {
-                CharName = "Sejuani",
+                CharName = "Shen",
                 Dangerlevel = SpellDangerLevel.High,
-                Name = "Arctic Assault",
-                ProjectileSpeed = 1250,
-                Radius = 70,
-                Range = 850,
+                MissileName = "ShenE",
+                Name = "ShadowDash",
+                ProjectileSpeed = 1450,
+                Radius = 50,
+                Range = 600,
                 SpellDelay = 0,
-                SpellKey = SpellSlot.Q,
-                SpellName = "SejuaniArcticAssault",
+                SpellKey = SpellSlot.E,
+                SpellName = "ShenE",
                 SpellType = SpellType.Line,
 
             });
 
-            Spells.Add(
-            new SpellData
-            {
-                CharName = "Sejuani",
-                Dangerlevel = SpellDangerLevel.Extreme,
-                MissileName = "SejuaniGlacialPrison",
-                Name = "SejuaniR",
-                ProjectileSpeed = 1600,
-                Radius = 110,
-                Range = 1200,
-                SpellDelay = 250,
-                SpellKey = SpellSlot.R,
-                SpellName = "SejuaniGlacialPrisonCast",
-                ExtraSpellNames = new [] { "SejuaniGlacialPrison" },
-                SpellType = SpellType.Line,
-
-            });
-            #endregion Sejuani
+            #endregion Shen
 
             
             #region Shyvana
