@@ -3587,7 +3587,7 @@ public static class SpellDatabase
 
             });*/
 
-            Spells.Add(
+            /*Spells.Add(
             new SpellData
             {
                 CharName = "Viktor",
