@@ -3170,7 +3170,7 @@ public static class SpellDatabase
 
             });
             #endregion Taliyah
-            #region Talon
+            /*#region Talon
 
             Spells.Add(
             new SpellData
