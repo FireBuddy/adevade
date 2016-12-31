@@ -2897,7 +2897,7 @@ public static class SpellDatabase
             new SpellData
             {
                 CharName = "Shyvana",
-                Dangerlevel = SpellDangerLevel.High,,
+                Dangerlevel = SpellDangerLevel.High,
                 MissileName = "ShyvanaTransformCast",
                 Name = "Dragon's Descent",
                 ProjectileSpeed = 1250,
@@ -3500,7 +3500,7 @@ public static class SpellDatabase
                 ProjectileSpeed = 1300,
                 Radius = 50,
                 Range = 1250,
-                spellDelay = 250f,
+                SpellDelay = 250f,
                 SpellKey = SpellSlot.Q,
                 MissileName = "VelkozQMissile",
                 SpellName = "VelkozQ",
