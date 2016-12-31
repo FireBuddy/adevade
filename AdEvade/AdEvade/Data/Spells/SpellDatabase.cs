@@ -2773,27 +2773,43 @@ public static class SpellDatabase
             
             #endregion Rumble
 
-            #region Ryze
+
             
+            #region Sejuani
             Spells.Add(
             new SpellData
             {
-                CharName = "Ryze",
-                Dangerlevel = SpellDangerLevel.Normal,
-                MissileName = "RyzeQ",
-                Name = "RyzeQ",
-                ProjectileSpeed = 1700,
-                Radius = 60,
-                Range = 900,
-                SpellDelay = 250,
+                CharName = "Sejuani",
+                Dangerlevel = SpellDangerLevel.High,
+                Name = "Arctic Assault",
+                ProjectileSpeed = 1250,
+                Radius = 70,
+                Range = 850,
+                SpellDelay = 0,
                 SpellKey = SpellSlot.Q,
-                SpellName = "RyzeQ",
+                SpellName = "SejuaniArcticAssault",
                 SpellType = SpellType.Line,
-                CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions },
-                FixedRange = true,
+
             });
 
-            #endregion Ryze
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Sejuani",
+                Dangerlevel = SpellDangerLevel.Extreme,
+                MissileName = "SejuaniGlacialPrison",
+                Name = "SejuaniR",
+                ProjectileSpeed = 1600,
+                Radius = 110,
+                Range = 1200,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.R,
+                SpellName = "SejuaniGlacialPrisonCast",
+                ExtraSpellNames = new [] { "SejuaniGlacialPrison" },
+                SpellType = SpellType.Line,
+
+            });
+            #endregion Seju
 
 
             
