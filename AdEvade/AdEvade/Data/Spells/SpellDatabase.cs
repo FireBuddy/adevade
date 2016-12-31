@@ -2524,7 +2524,7 @@ public static class SpellDatabase
                 SpellKey = SpellSlot.W,
                 SpellName = "OrianaDissonanceCommand",
                 SpellType = SpellType.Circular,
-                DefaultOff = true
+                DefaultOff = true,
             });
 
             Spells.Add(
