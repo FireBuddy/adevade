@@ -3531,7 +3531,7 @@ public static class SpellDatabase
             });
             #endregion Vi
 
-            #region Viktor
+  #region Viktor
 
             Spells.Add(
             new SpellData
@@ -3559,13 +3559,11 @@ public static class SpellDatabase
                 Name = "ViktorDeathRay3",
                 ProjectileSpeed = float.MaxValue,
                 SpellDelay = 500,
-                Radius = 75,
-                Range = 815,
+                Radius = 80,
+                Range = 800,
                 SpellKey = SpellSlot.E,
                 SpellName = "ViktorDeathRay3",
-                SpellType = SpellType.Line,   
-                UsePackets = true,
-                FixedRange = true,
+                SpellType = SpellType.Line,                
             });
 
             /*Spells.Add(
@@ -3582,7 +3580,6 @@ public static class SpellDatabase
                 SpellName = "ViktorDeathRay2",
                 SpellType = SpellType.Line,
                 UsePackets = true,
-
             });*/
 
             Spells.Add(
@@ -3627,7 +3624,6 @@ public static class SpellDatabase
             {
                 CharName = "Xerath",
                 Dangerlevel = SpellDangerLevel.Normal,
-                MissileName = "XerathArcaneBarrage2",
                 Name = "XerathArcaneBarrage2",
                 Radius = 280,
                 Range = 1100,
@@ -3643,7 +3639,6 @@ public static class SpellDatabase
             {
                 CharName = "Xerath",
                 Dangerlevel = SpellDangerLevel.High,
-                MissileName = "XerathArcanopulse2",
                 Name = "XerathArcanopulse2",
                 ProjectileSpeed = float.MaxValue,
                 Radius = 70,
@@ -3686,7 +3681,7 @@ public static class SpellDatabase
                 SpellName = "XerathMageSpear",
                 SpellType = SpellType.Line,
                 CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions },
-                FixedRange = true,
+
             });
             #endregion Xerath
 
@@ -3699,15 +3694,14 @@ public static class SpellDatabase
                 Dangerlevel = SpellDangerLevel.High,
                 MissileName = "YasuoQ3Mis",
                 Name = "Steel Tempest3",
-                ProjectileSpeed = 1250,
+                ProjectileSpeed = 1200,
                 Radius = 90,
                 Range = 1100,
-                SpellDelay = 300,
+                SpellDelay = 250,
                 SpellKey = SpellSlot.Q,
                 SpellName = "YasuoQ3W",
                 ExtraSpellNames = new []{ "YasuoQ3" },
                 SpellType = SpellType.Line,
-                FixedRange = true,
             });
 
             Spells.Add(
@@ -3715,18 +3709,15 @@ public static class SpellDatabase
             {
                 CharName = "Yasuo",
                 Dangerlevel = SpellDangerLevel.Normal,
-                MissileName = "yasuoq",
                 Name = "Steel Tempest",
                 ProjectileSpeed = float.MaxValue,
-                Radius = 40,
+                Radius = 35,
                 Range = 500,
-                SpellDelay = 400,
+                SpellDelay = 250,
                 SpellKey = SpellSlot.Q,
                 SpellName = "YasuoQ",
-                ExtraMissileNames = new[] { "yasuoq2" },
                 ExtraSpellNames = new [] {"YasuoQ2", "YasuoQ2W" },
                 SpellType = SpellType.Line
-                FixedRange = true,
             });
 
             #endregion Yasuo
@@ -3748,23 +3739,7 @@ public static class SpellDatabase
                     SpellName = "ZacQ",
                     ExtraSpellNames = new[] {"YasuoQ2", "YasuoQ2W"},
                     SpellType = SpellType.Line
-                    FixedRange = true,
                 });
-            
-            Spells.Add(
-            new SpellData
-            {
-                CharName = "Zac",
-                Dangerlevel = SpellDangerLevel.High,
-                Name = "Elastic Slingshot [Beta]",
-                ProjectileSpeed = 1000,
-                Radius = 300,
-                Range = 1800,
-                SpellDelay = 250,
-                SpellKey = SpellSlot.E,
-                SpellName = "ZacE",
-                SpellType = SpellType.Circular,
-            });
 
             #endregion Zac
 
@@ -3825,7 +3800,6 @@ public static class SpellDatabase
             {
                 CharName = "Ziggs",
                 Dangerlevel = SpellDangerLevel.Low,
-                MissileName = "ZiggsE",
                 Name = "ZiggsE",
                 ProjectileSpeed = 3000,
                 Radius = 235,
@@ -3842,13 +3816,11 @@ public static class SpellDatabase
             {
                 CharName = "Ziggs",
                 Dangerlevel = SpellDangerLevel.Low,
-                MissileName = "ZiggsW",
                 Name = "ZiggsW",
                 ProjectileSpeed = 3000,
                 Radius = 275,
                 Range = 2000,
                 SpellDelay = 250,
-                ExtraEndTime = 1000,
                 SpellKey = SpellSlot.W,
                 SpellName = "ZiggsW",
                 SpellType = SpellType.Circular,
@@ -3877,17 +3849,14 @@ public static class SpellDatabase
             {
                 CharName = "Ziggs",
                 Dangerlevel = SpellDangerLevel.Extreme,
-                MissileName = "ZiggsR",
                 Name = "ZiggsR",
                 ProjectileSpeed = 1500,
                 Radius = 550,
                 Range = 5300,
-                SpellDelay = 400,
+                SpellDelay = 1500,
                 SpellKey = SpellSlot.R,
                 SpellName = "ZiggsR",
                 SpellType = SpellType.Circular,
-                DefaultOff = true,
-                IsSpecial = true,
             });
             #endregion Ziggs
 
@@ -3898,16 +3867,14 @@ public static class SpellDatabase
             {
                 CharName = "Zilean",
                 Dangerlevel = SpellDangerLevel.Normal,
-                MissileName = "ZileanQMissile",
                 Name = "ZileanQ",
                 ProjectileSpeed = 2000,
-                Radius = 150,
+                Radius = 250,
                 Range = 900,
-                SpellDelay = 650,
+                SpellDelay = 300,
                 SpellKey = SpellSlot.Q,
                 SpellName = "ZileanQ",
                 SpellType = SpellType.Circular,
-                IsSpecial = true,
             });
 
             #endregion Zilean
@@ -3919,16 +3886,14 @@ public static class SpellDatabase
             {
                 CharName = "Zyra",
                 Dangerlevel = SpellDangerLevel.High,
-                MissileName = "ZyraEMissile",
                 Name = "Grasping Roots",
                 ProjectileSpeed = 1400, //1150
                 Radius = 70,
                 Range = 1150,
                 SpellDelay = 250,
                 SpellKey = SpellSlot.E,
-                SpellName = "ZyraE",
+                SpellName = "ZyraGraspingRoots",
                 SpellType = SpellType.Line,
-                FixedRange = true,
 
             });
 
@@ -3954,15 +3919,13 @@ public static class SpellDatabase
             {
                 CharName = "Zyra",
                 Dangerlevel = SpellDangerLevel.Normal,
-                MissileName = "ZyraQ",
                 Name = "Deadly Bloom",
-                Radius = 140,
+                Radius = 260,
                 Range = 825,
-                SpellDelay = 850,
+                SpellDelay = 800,
                 SpellKey = SpellSlot.Q,
-                SpellName = "ZyraQ",
+                SpellName = "ZyraQFissure",
                 SpellType = SpellType.Circular,
-                SecondaryRadius = 400,
 
             });
 
@@ -3978,8 +3941,7 @@ public static class SpellDatabase
                 SpellKey = SpellSlot.R,
                 SpellName = "ZyraBrambleZone",
                 SpellType = SpellType.Circular,
-
             });*/
             #endregion Zyra
         }
-    }}
+}}
