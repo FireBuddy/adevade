@@ -1794,19 +1794,19 @@ public static class SpellDatabase
             Spells.Add(
             new SpellData
             {
-                angle = 5,
-                charName = "Kled",
+                Angle = 5,
+                CharName = "Kled",
                 Dangerlevel = SpellDangerLevel.Normal,
-                isThreeWay = true,
+                IsThreeWay = true,
                 missileName = "KledRiderQMissile",
-                name = "Pocket Pistol",
-                projectileSpeed = 3000,
-                radius = 40,
-                range = 700,
-                spellDelay = 250,
-                spellKey = SpellSlot.Q,
-                spellName = "KledRiderQ",
-                spellType = SpellType.Line,
+                Name = "Pocket Pistol",
+                ProjectileSpeed = 3000,
+                Radius = 40,
+                Range = 700,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.Q,
+                SpellName = "KledRiderQ",
+                SpellType = SpellType.Line,
                 //splits = 5 this "splits" is not even implemented
             });
             
