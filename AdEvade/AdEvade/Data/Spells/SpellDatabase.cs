@@ -1810,6 +1810,37 @@ public static class SpellDatabase
                 //splits = 5 this "splits" is not even implemented
             });
             
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Kled",
+                Dangerlevel = SpellDangerLevel.Normal,
+                MissileName = "KledQMissile",
+                Name = "Beartrap on a Rope",
+                ProjectileSpeed = 1600,
+                Radius = 45,
+                Range = 800,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.Q,
+                SpellName = "KledQ",
+                SpellType = SpellType.Line,
+            });
+            
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Kled",
+                Dangerlevel = SpellDangerLevel.Normal,
+                Name = "Jousting",
+                ProjectileSpeed = 945,
+                Radius = 125,
+                Range = 750,
+                SpellDelay = 0,
+                SpellKey = SpellSlot.E,
+                SpellName = "KledE",
+                SpellType = SpellType.Line,
+            });
+            
             #endregion Kled
 
             #region KogMaw
@@ -1823,12 +1854,13 @@ public static class SpellDatabase
                 MissileName = "KogMawQ",
                 ProjectileSpeed = 1650,
                 Radius = 70,
-                Range = 1125,
+                Range = 1200,
                 SpellDelay = 250,
                 SpellKey = SpellSlot.Q,
                 SpellName = "KogMawQ",
                 SpellType = SpellType.Line,
                 CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions },
+                FixedRange = true,
             });
 
             Spells.Add(
@@ -1838,13 +1870,14 @@ public static class SpellDatabase
                 Dangerlevel = SpellDangerLevel.Low,
                 Name = "KogMawVoidOoze",
                 MissileName = "KogMawVoidOozeMissile",
-                ProjectileSpeed = 1400,
+                ProjectileSpeed = 1350,
                 Radius = 120,
                 Range = 1360,
                 SpellDelay = 250,
                 SpellKey = SpellSlot.E,
                 SpellName = "KogMawVoidOoze",
                 SpellType = SpellType.Line,
+                FixedRange = true,
 
             });
 
@@ -1853,6 +1886,7 @@ public static class SpellDatabase
             {
                 CharName = "KogMaw",
                 Dangerlevel = SpellDangerLevel.Normal,
+                MissileName = "KogMawLivingArtillery",
                 Name = "Living Artillery",
                 Radius = 235,
                 Range = 2200,
@@ -1890,16 +1924,17 @@ public static class SpellDatabase
                 CharName = "Leblanc",
                 Dangerlevel = SpellDangerLevel.Normal,
                 Name = "Ethereal Chains",
-                MissileName = "LeblancSoulShackle",
+                MissileName = "LeblancEMissile",
                 ProjectileSpeed = 1750,
                 Radius = 55,
                 Range = 960,
                 SpellDelay = 250,
                 SpellKey = SpellSlot.E,
-                SpellName = "LeblancSoulShackle",
+                SpellName = "LeblancE",
+                ExtraMissileNames = new []{ "LeblancRE" },
                 SpellType = SpellType.Line,
                 CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions },
-
+                FixedRange = true,
             });
 
             Spells.Add(
@@ -1907,13 +1942,13 @@ public static class SpellDatabase
             {
                 CharName = "Leblanc",
                 Dangerlevel = SpellDangerLevel.Low,
-                Name = "LeblancSlideM",
+                Name = "Distortion [Beta]",
                 ProjectileSpeed = 1450,
                 Radius = 250,
-                Range = 725,
+                Range = 600,
                 SpellDelay = 250,
-                SpellKey = SpellSlot.R,
-                SpellName = "LeblancSlideM",
+                SpellKey = SpellSlot.W,
+                SpellName = "LeblancW",
                 SpellType = SpellType.Circular,
 
             });
@@ -1930,6 +1965,22 @@ public static class SpellDatabase
                 SpellDelay = 250,
                 SpellKey = SpellSlot.W,
                 SpellName = "LeblancSlide",
+                SpellType = SpellType.Circular,
+
+            });
+            
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Leblanc",
+                Dangerlevel = SpellDangerLevel.Low,
+                Name = "LeblancSlideM",
+                ProjectileSpeed = 1450,
+                Radius = 250,
+                Range = 725,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.R,
+                SpellName = "LeblancSlideM",
                 SpellType = SpellType.Circular,
 
             });
