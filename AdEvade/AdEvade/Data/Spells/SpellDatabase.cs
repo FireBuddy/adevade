@@ -1620,7 +1620,7 @@ public static class SpellDatabase
                 SpellName = "KarmaQ",
                 SpellType = SpellType.Line,
                 CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions },
-                fixedRange = true
+                FixedRange = true,
             });
 
             Spells.Add(
@@ -1713,7 +1713,7 @@ public static class SpellDatabase
                 SpellName = "KennenShurikenHurlMissile1",
                 SpellType = SpellType.Line,
                 CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions },
-                fixedRange = true
+                FixedRange = true,
             });
             #endregion Kennen
 
