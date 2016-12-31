@@ -2732,46 +2732,30 @@ public static class SpellDatabase
             });
             #endregion Riven
 
-            #region Rumble
 
+            
+            #region Ryze
+            
             Spells.Add(
             new SpellData
             {
-                CharName = "Rumble",
-                Dangerlevel = SpellDangerLevel.Low,
-                MissileName = "RumbleGrenadeMissile",
-                Name = "RumbleGrenade",
-                ProjectileSpeed = 2000,
+                CharName = "Ryze",
+                Dangerlevel = SpellDangerLevel.Normal,
+                MissileName = "RyzeQ",
+                Name = "RyzeQ",
+                ProjectileSpeed = 1700,
                 Radius = 60,
-                Range = 950,
+                Range = 900,
                 SpellDelay = 250,
-                SpellKey = SpellSlot.E,
-                SpellName = "RumbleGrenade",
+                SpellKey = SpellSlot.Q,
+                SpellName = "RyzeQ",
                 SpellType = SpellType.Line,
                 CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions },
                 FixedRange = true,
             });
-            
-            
-            Spells.Add(
-            new SpellData
-            {
-                CharName = "Rumble",
-                Dangerlevel = SpellDangerLevel.Extreme,
-                MissileName = "RumbleCarpetBombMissile",
-                Name = "Carpet Bomb",
-                ProjectileSpeed = 1600,
-                Radius = 200,
-                Range = 1200,
-                SpellDelay = 0,
-                SpellKey = SpellSlot.R,
-                SpellName = "RumbleCarpetBomb",
-                SpellType = SpellType.Line,
-                UsePackets = true,
-                FixedRange = true,
-            });
-            
-            #endregion Rumble
+
+            #endregion Ryze
+                
 
 
             
