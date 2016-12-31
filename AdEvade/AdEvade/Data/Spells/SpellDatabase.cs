@@ -2920,193 +2920,203 @@ public static class SpellDatabase
             
             #endregion Shyvana
             
-           
-
-            #region TahmKench
+             #region Sion
 
             Spells.Add(
             new SpellData
             {
-                CharName = "TahmKench",
+                CharName = "Sion",
                 Dangerlevel = SpellDangerLevel.Normal,
-                MissileName = "TahmkenchQMissile",
-                Name = "TahmKenchQ",
-                ProjectileSpeed = 2000,
-                SpellDelay = 250,
-                Radius = 70,
+                MissileName = "SionEMissile",
+                Name = "SionE",
+                ProjectileSpeed = 1800,
+                Radius = 80,
                 Range = 800,
-                SpellKey = SpellSlot.Q,
-                SpellName = "TahmKenchQ",
+                SpellDelay = 250,
+                SpellKey = SpellSlot.E,
+                SpellName = "SionE",
                 SpellType = SpellType.Line,
-                CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions },
+                IsSpecial = true,
+                FixedRange = true,
+
+            });
+            #endregion Sion
+
+            #region Sivir
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Sivir",
+                Dangerlevel = SpellDangerLevel.Normal,
+                MissileName = "SivirQMissile",
+                Name = "Boomerang Blade",
+                ProjectileSpeed = 1350,
+                Radius = 100,
+                Range = 1275,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.Q,
+                SpellName = "SivirQ",
+                ExtraMissileNames = new[] { "SivirQMissileReturn" },
+                ExtraSpellNames = new[] { "SivirQReturn" },
+                SpellType = SpellType.Line,
                 FixedRange = true,
             });
 
-            #endregion TahmKench
-            
-            #region Taliyah
+            #endregion Sivir
+
+            #region Skarner
 
             Spells.Add(
             new SpellData
             {
-                CharName = "Taliyah",
+                CharName = "Skarner",
                 Dangerlevel = SpellDangerLevel.Normal,
-                MissileName = "TaliyahQMis",
-                Name = "TaliyahQ",
-                ProjectileSpeed = 1450,
-                Radius = 100,
+                MissileName = "SkarnerFractureMissile",
+                Name = "SkarnerFracture",
+                ProjectileSpeed = 1400,
+                Radius = 60,
                 Range = 1000,
                 SpellDelay = 250,
-                SpellKey = SpellSlot.Q,
-                SpellName = "TaliyahQ",
+                SpellKey = SpellSlot.E,
+                SpellName = "SkarnerFracture",
                 SpellType = SpellType.Line,
-                CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions },
-
+                FixedRange = true,
             });
+            #endregion Skarner
+
+            #region Sona
 
             Spells.Add(
             new SpellData
             {
-                CharName = "Taliyah",
-                Dangerlevel = SpellDangerLevel.High,
-                Name = "TaliyahW",
-                Radius = 165,
-                Range = 900,
-                SpellDelay = 450,
-                ExtraEndTime = 1000,
-                SpellKey = SpellSlot.W,
-                SpellName = "TaliyahWVC",
-                ExtraSpellNames = new []{ "TaliyahW" },
+                CharName = "Sona",
+                Dangerlevel = SpellDangerLevel.Extreme,
+                MissileName = "SonaR",
+                Name = "Crescendo",
+                ProjectileSpeed = 2400,
+                Radius = 150,
+                Range = 1000,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.R,
+                SpellName = "SonaR",
+                SpellType = SpellType.Line,
+                FixedRange = true,
+            });
+            #endregion Sona
+
+            #region Soraka
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Soraka",
+                Dangerlevel = SpellDangerLevel.Normal,
+                Name = "SorakaQ",
+                ProjectileSpeed = 1100,
+                Radius = 260,
+                Range = 970,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.Q,
+                SpellName = "SorakaQ",
                 SpellType = SpellType.Circular,
 
             });
-            #endregion Taliyah
-
-            #region Talon
 
             Spells.Add(
             new SpellData
             {
-                Angle = 14,
-                CharName = "Talon",
-                Dangerlevel = SpellDangerLevel.Normal,
-                IsThreeWay = true,
-                MissileName = "talonwmissile",
-                Name = "TalonRake",
-                ProjectileSpeed = 2300,
-                Radius = 75,
-                Range = 900,
-                SpellKey = SpellSlot.W,
-                SpellName = "talonw",
-                SpellType = SpellType.Line,
-                Splits = 3,
-                IsSpecial = true,
-                FixedRange = true,
-            });
-            
-            Spells.Add(
-            new SpellData
-            {
-                Angle = 14,
-                CharName = "Talon",
-                Dangerlevel = SpellDangerLevel.Normal,
-                IsThreeWay = true,
-                Name = "TalonRake",
-                ProjectileSpeed = 3000,
-                Radius = 75,
-                Range = 900,
-                SpellKey = SpellSlot.W,
-                SpellName = "talonwmissiletwo",
-                SpellType = SpellType.Line,
-                Splits = 3,
-                IsSpecial = true,
-                FixedRange = true,
-            });
-            #endregion Talon
-
-            #region Thresh
-
-            Spells.Add(
-            new SpellData
-            {
-                CharName = "Thresh",
+                CharName = "Soraka",
                 Dangerlevel = SpellDangerLevel.High,
-                MissileName = "ThreshQMissile",
-                Name = "ThreshQ",
-                ProjectileSpeed = 1900,
-                Radius = 70,
-                Range = 1100,
-                SpellDelay = 500,
-                SpellKey = SpellSlot.Q,
-                SpellName = "ThreshQ",
-                SpellType = SpellType.Line,
-                CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions },
-                FixedRange = true,
-            });
-
-            Spells.Add(
-            new SpellData
-            {
-                CharName = "Thresh",
-                Dangerlevel = SpellDangerLevel.High,
-                MissileName = "ThreshEMissile1",
-                Name = "ThreshE",
-                ProjectileSpeed = 2000,
-                Radius = 110,
-                Range = 1075,
-                SpellDelay = 125,
                 DefaultOff = true,
+                Name = "SorakaE",
+                Radius = 275,
+                Range = 925,
+                SpellDelay = 1750,
                 SpellKey = SpellSlot.E,
-                SpellName = "ThreshE",
-                ExtraSpellNames = new [] { "ThreshEFlay" },
-                SpellType = SpellType.Line,
+                SpellName = "SorakaE",
+                SpellType = SpellType.Circular,
+
+            });
+            #endregion Soraka
+
+            #region Swain
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Swain",
+                Dangerlevel = SpellDangerLevel.High,
+                MissileName = "SwainShadowGrasp",
+                Name = "Nevermove",
+                Radius = 250,
+                Range = 900,
+                SpellDelay = 1100,
+                SpellKey = SpellSlot.W,
+                SpellName = "SwainShadowGrasp",
+                SpellType = SpellType.Circular,
+
+            });
+            #endregion Swain
+
+            #region Syndra
+
+            Spells.Add(
+            new SpellData
+            {
+                Angle = 30,
+                CharName = "Syndra",
+                Dangerlevel = SpellDangerLevel.High,
+                Name = "SyndraE",
+                MissileName = "SyndraE",
                 UsePackets = true,
-                FixedRange = true,
-                
-            });
-            #endregion Thresh
-
-            #region TwistedFate
-
-            Spells.Add(
-            new SpellData
-            {
-                Angle = 28,
-                CharName = "TwistedFate",
-                Dangerlevel = SpellDangerLevel.Normal,
-                IsThreeWay = true,
-                MissileName = "SealFateMissile",
-                Name = "Loaded Dice",
-                ProjectileSpeed = 1000,
-                Radius = 40,
-                Range = 1450,
-                SpellDelay = 250,
-                SpellKey = SpellSlot.Q,
-                SpellName = "WildCards",
+                ProjectileSpeed = 2000,
+                Radius = 90,
+                Range = 850,
+                SpellDelay = 0,
+                SpellKey = SpellSlot.E,
+                SpellName = "SyndraE",
+                ExtraSpellNames = new []{ "syndrae5" },
                 SpellType = SpellType.Line,
-                IsSpecial = true,
             });
-            #endregion TwistedFate
-
-            #region Twitch
 
             Spells.Add(
             new SpellData
             {
-                CharName = "Twitch",
+                CharName = "Syndra",
                 Dangerlevel = SpellDangerLevel.Normal,
-                MissileName = "TwitchSprayandPrayAttack",
-                Name = "Loaded Dice",
-                ProjectileSpeed = 4000,
-                Radius = 65,
-                Range = 1100,
+                Name = "SyndraW",
+                MissileName = "syndrawcast",
+                ProjectileSpeed = 1450,
+                Radius = 220,
+                Range = 925,
                 SpellDelay = 250,
-                SpellKey = SpellSlot.R,
-                SpellName = "TwitchSprayandPrayAttack",
-                SpellType = SpellType.Line
+                SpellKey = SpellSlot.W,
+                SpellName = "SyndraWCast",
+                SpellType = SpellType.Circular,
+
             });
 
-            #endregion Twitch
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Syndra",
+                Dangerlevel = SpellDangerLevel.Normal,
+                MissileName = "SyndraQSpell",
+                Name = "SyndraQ",
+                Radius = 210,
+                Range = 800,
+                SpellDelay = 600,
+                SpellKey = SpellSlot.Q,
+                SpellName = "SyndraQ",
+                MissileName = "SyndraQSpell",
+                SpellType = SpellType.Circular,
+
+            });
+            #endregion Syndra
+           
+
+            
 
             #region Urgot
 
