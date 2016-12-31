@@ -1771,7 +1771,44 @@ public static class SpellDatabase
                 SpellName = "KhazixE",
                 SpellType = SpellType.Circular,
             });
+                Spells.Add(
+                new SpellData
+                {
+                CharName = "Khazix",
+                Dangerlevel = SpellDangerLevel.Normal,
+                MissileName = "khazixelong",
+                Name = "Leap Evolved",
+                ProjectileSpeed = 1200,
+                Radius = 300,
+                Range = 900,
+                SpellDelay = 0,
+                SpellKey = SpellSlot.E,
+                SpellName = "khazixelong",
+                SpellType = SpellType.Circular,
+            });
             #endregion Khazix
+                
+            
+            #region Kled
+
+            Spells.Add(
+            new SpellData
+            {
+                angle = 5,
+                charName = "Kled",
+                Dangerlevel = SpellDangerLevel.Normal,
+                isThreeWay = true,
+                missileName = "KledRiderQMissile",
+                name = "Pocket Pistol",
+                projectileSpeed = 3000,
+                radius = 40,
+                range = 700,
+                spellDelay = 250,
+                spellKey = SpellSlot.Q,
+                spellName = "KledRiderQ",
+                spellType = SpellType.Line,
+                //splits = 5 this "splits" is not even implemented
+            });
 
             #region KogMaw
 
