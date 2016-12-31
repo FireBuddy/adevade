@@ -3692,7 +3692,7 @@ public static class SpellDatabase
             });
             #endregion Xerath
 
-            /*#region Yasuo
+            #region Yasuo
 
             Spells.Add(
             new SpellData
@@ -3731,9 +3731,9 @@ public static class SpellDatabase
                 FixedRange = true,
             });
 
-           /* #endregion Yasuo
+            #endregion Yasuo
 
-            #region Zac
+            /*#region Zac
 
             Spells.Add(
                 new SpellData
