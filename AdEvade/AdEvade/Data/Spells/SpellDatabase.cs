@@ -3733,7 +3733,7 @@ public static class SpellDatabase
 
             #endregion Yasuo
 
-            /*#region Zac
+            #region Zac
 
             Spells.Add(
                 new SpellData
@@ -3818,7 +3818,7 @@ public static class SpellDatabase
                 DefaultOff = true,
             });*/
 
-            /*#endregion Zed
+            #endregion Zed
 
             #region Ziggs
 
@@ -3968,7 +3968,7 @@ public static class SpellDatabase
 
             });
 
-            /*Spells.Add(
+            Spells.Add(
             new SpellData
             {
                 CharName = "Zyra",
@@ -3981,8 +3981,8 @@ public static class SpellDatabase
                 SpellName = "ZyraBrambleZone",
                 SpellType = SpellType.Circular,
 
-            });*/
-            //#endregion Zyra
+            });
+            #endregion Zyra
               
 
 
