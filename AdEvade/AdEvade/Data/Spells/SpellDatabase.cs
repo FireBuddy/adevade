@@ -3726,7 +3726,7 @@ public static class SpellDatabase
                 SpellName = "YasuoQ",
                 ExtraSpellNames = new [] {"YasuoQ2", "YasuoQ2W" },
                 SpellType = SpellType.Line
-                FixedRange = true,
+                
             });
 
             #endregion Yasuo
