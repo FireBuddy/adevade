@@ -1809,6 +1809,8 @@ public static class SpellDatabase
                 spellType = SpellType.Line,
                 //splits = 5 this "splits" is not even implemented
             });
+            
+            #endregion Kled
 
             #region KogMaw
 
