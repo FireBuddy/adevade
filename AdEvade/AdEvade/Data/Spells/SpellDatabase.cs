@@ -2692,48 +2692,49 @@ public static class SpellDatabase
 
             #endregion Rengar
             
-            #region Riven
-
+  
+            
+            #region Rumble
+            
             Spells.Add(
             new SpellData
             {
-                Angle = 15,
-                CharName = "Riven",
-                Dangerlevel = SpellDangerLevel.Normal,
-                IsThreeWay = true,
-                Name = "WindSlash",
-                ProjectileSpeed = 1600,
-                Radius = 100,
-                Range = 1100,
+                CharName = "Rumble",
+                Dangerlevel = SpellDangerLevel.Low,
+                MissileName = "RumbleGrenadeMissile",
+                Name = "RumbleGrenade",
+                ProjectileSpeed = 2000,
+                Radius = 60,
+                Range = 950,
                 SpellDelay = 250,
-                SpellKey = SpellSlot.R,
-                SpellName = "RivenIzunaBlade",
+                SpellKey = SpellSlot.E,
+                SpellName = "RumbleGrenade",
                 SpellType = SpellType.Line,
-                IsSpecial = true,
+                CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions },
                 FixedRange = true,
             });
-
+            
+            
             Spells.Add(
             new SpellData
             {
-                CharName = "Riven",
-                Dangerlevel = SpellDangerLevel.Normal,
-                DefaultOff = true,
-                MissileName = "RivenMartyr",
-                Name = "RivenW",
-                ProjectileSpeed = 1500,
-                Radius = 280,
-                Range = 650,
+                CharName = "Rumble",
+                Dangerlevel = SpellDangerLevel.Extreme,
+                MissileName = "RumbleCarpetBombMissile",
+                Name = "Carpet Bomb",
+                ProjectileSpeed = 1600,
+                Radius = 200,
+                Range = 1200,
                 SpellDelay = 0,
-                SpellKey = SpellSlot.W,
-                SpellName = "RivenMartyr",
-                SpellType = SpellType.Circular,
-
+                SpellKey = SpellSlot.R,
+                SpellName = "RumbleCarpetBomb",
+                SpellType = SpellType.Line,
+                UsePackets = true,
+                FixedRange = true,
             });
-            #endregion Riven
-
-
             
+            #endregion Rumble
+
             #region Ryze
             
             Spells.Add(
