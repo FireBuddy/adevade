@@ -3212,7 +3212,7 @@ public static class SpellDatabase
             });
             #endregion Talon
 
-            /*#region Thresh
+            #region Thresh
 
             Spells.Add(
             new SpellData
@@ -3276,7 +3276,7 @@ public static class SpellDatabase
             });
             #endregion TwistedFate
 
-            #region Twitch
+            /*#region Twitch
 
             Spells.Add(
             new SpellData
