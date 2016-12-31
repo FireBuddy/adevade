@@ -3709,6 +3709,7 @@ public static class SpellDatabase
                 SpellName = "YasuoQ3W",
                 ExtraSpellNames = new []{ "YasuoQ3" },
                 SpellType = SpellType.Line,
+                FixedRange = true,
             });
 
             Spells.Add(
@@ -3725,6 +3726,7 @@ public static class SpellDatabase
                 SpellName = "YasuoQ",
                 ExtraSpellNames = new [] {"YasuoQ2", "YasuoQ2W" },
                 SpellType = SpellType.Line
+                FixedRange = true,
             });
 
             #endregion Yasuo
