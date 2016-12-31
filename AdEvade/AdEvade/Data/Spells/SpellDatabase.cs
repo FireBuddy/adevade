@@ -3170,7 +3170,7 @@ public static class SpellDatabase
 
             });
             #endregion Taliyah
-            /*#region Talon
+            #region Talon
 
             Spells.Add(
             new SpellData
@@ -3212,7 +3212,7 @@ public static class SpellDatabase
             });
             #endregion Talon
 
-            #region Thresh
+            /*#region Thresh
 
             Spells.Add(
             new SpellData
