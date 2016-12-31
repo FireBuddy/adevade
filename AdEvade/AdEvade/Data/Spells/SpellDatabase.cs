@@ -1756,9 +1756,9 @@ public static class SpellDatabase
 
             });
             
-                Spells.Add(
-                new SpellData
-                {
+            Spells.Add(
+            new SpellData
+            {
                 CharName = "Khazix",
                 Dangerlevel = SpellDangerLevel.Normal,
                 MissileName = "khazixe",
@@ -1771,9 +1771,9 @@ public static class SpellDatabase
                 SpellName = "KhazixE",
                 SpellType = SpellType.Circular,
             });
-                Spells.Add(
-                new SpellData
-                {
+            Spells.Add(
+            new SpellData
+            {
                 CharName = "Khazix",
                 Dangerlevel = SpellDangerLevel.Normal,
                 MissileName = "khazixelong",
@@ -1798,7 +1798,7 @@ public static class SpellDatabase
                 CharName = "Kled",
                 Dangerlevel = SpellDangerLevel.Normal,
                 IsThreeWay = true,
-                missileName = "KledRiderQMissile",
+                MissileName = "KledRiderQMissile",
                 Name = "Pocket Pistol",
                 ProjectileSpeed = 3000,
                 Radius = 40,
