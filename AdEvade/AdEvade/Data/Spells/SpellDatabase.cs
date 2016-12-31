@@ -3058,6 +3058,64 @@ public static class SpellDatabase
 
             });
             #endregion Swain
+            
+            #region Syndra
+
+            Spells.Add(
+            new SpellData
+            {
+                Angle = 30,
+                CharName = "Syndra",
+                Dangerlevel = SpellDangerLevel.High,
+                Name = "SyndraE",
+                MissileName = "SyndraE",
+                UsePackets = true,
+                ProjectileSpeed = 2000,
+                Radius = 90,
+                Range = 850,
+                SpellDelay = 0,
+                SpellKey = SpellSlot.E,
+                SpellName = "SyndraE",
+                ExtraSpellNames = new []{ "syndrae5" },
+                SpellType = SpellType.Line,
+            });
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Syndra",
+                Dangerlevel = SpellDangerLevel.Normal,
+                Name = "SyndraW",
+                MissileName = "syndrawcast",
+                ProjectileSpeed = 1450,
+                Radius = 220,
+                Range = 925,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.W,
+                SpellName = "SyndraWCast",
+                SpellType = SpellType.Circular,
+
+            });
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Syndra",
+                Dangerlevel = SpellDangerLevel.Normal,
+                MissileName = "SyndraQSpell",
+                Name = "SyndraQ",
+                Radius = 210,
+                Range = 800,
+                SpellDelay = 600,
+                SpellKey = SpellSlot.Q,
+                SpellName = "SyndraQ",
+                MissileName = "SyndraQSpell",
+                SpellType = SpellType.Circular,
+
+            });
+            #endregion Syndra
+            
+            
 
 
            
