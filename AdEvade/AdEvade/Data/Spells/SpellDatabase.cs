@@ -3170,6 +3170,820 @@ public static class SpellDatabase
 
             });
             #endregion Taliyah
+            #region Talon
+
+            Spells.Add(
+            new SpellData
+            {
+                Angle = 14,
+                CharName = "Talon",
+                Dangerlevel = SpellDangerLevel.Normal,
+                IsThreeWay = true,
+                MissileName = "talonwmissile",
+                Name = "TalonRake",
+                ProjectileSpeed = 2300,
+                Radius = 75,
+                Range = 900,
+                SpellKey = SpellSlot.W,
+                SpellName = "talonw",
+                SpellType = SpellType.Line,
+                Splits = 3,
+                IsSpecial = true,
+                FixedRange = true,
+            });
+            
+            Spells.Add(
+            new SpellData
+            {
+                Angle = 14,
+                CharName = "Talon",
+                Dangerlevel = SpellDangerLevel.Normal,
+                IsThreeWay = true,
+                Name = "TalonRake",
+                ProjectileSpeed = 3000,
+                Radius = 75,
+                Range = 900,
+                SpellKey = SpellSlot.W,
+                SpellName = "talonwmissiletwo",
+                SpellType = SpellType.Line,
+                Splits = 3,
+                IsSpecial = true,
+                FixedRange = true,
+            });
+            #endregion Talon
+
+            #region Thresh
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Thresh",
+                Dangerlevel = SpellDangerLevel.High,
+                MissileName = "ThreshQMissile",
+                Name = "ThreshQ",
+                ProjectileSpeed = 1900,
+                Radius = 70,
+                Range = 1100,
+                SpellDelay = 500,
+                SpellKey = SpellSlot.Q,
+                SpellName = "ThreshQ",
+                SpellType = SpellType.Line,
+                CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions },
+                FixedRange = true,
+            });
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Thresh",
+                Dangerlevel = SpellDangerLevel.High,
+                MissileName = "ThreshEMissile1",
+                Name = "ThreshE",
+                ProjectileSpeed = 2000,
+                Radius = 110,
+                Range = 1075,
+                SpellDelay = 125,
+                DefaultOff = true,
+                SpellKey = SpellSlot.E,
+                SpellName = "ThreshE",
+                ExtraSpellNames = new [] { "ThreshEFlay" },
+                SpellType = SpellType.Line,
+                UsePackets = true,
+                FixedRange = true,
+                
+            });
+            #endregion Thresh
+
+            #region TwistedFate
+
+            Spells.Add(
+            new SpellData
+            {
+                Angle = 28,
+                CharName = "TwistedFate",
+                Dangerlevel = SpellDangerLevel.Normal,
+                IsThreeWay = true,
+                MissileName = "SealFateMissile",
+                Name = "Loaded Dice",
+                ProjectileSpeed = 1000,
+                Radius = 40,
+                Range = 1450,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.Q,
+                SpellName = "WildCards",
+                SpellType = SpellType.Line,
+                IsSpecial = true,
+            });
+            #endregion TwistedFate
+
+            #region Twitch
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Twitch",
+                Dangerlevel = SpellDangerLevel.Normal,
+                MissileName = "TwitchSprayandPrayAttack",
+                Name = "Loaded Dice",
+                ProjectileSpeed = 4000,
+                Radius = 65,
+                Range = 1100,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.R,
+                SpellName = "TwitchSprayandPrayAttack",
+                SpellType = SpellType.Line
+            });
+
+            #endregion Twitch
+            
+             #region Urgot
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Urgot",
+                Dangerlevel = SpellDangerLevel.Low,
+                Name = "Acid Hunter",
+                ProjectileSpeed = 1600,
+                Radius = 60,
+                Range = 1000,
+                SpellDelay = 175,
+                SpellKey = SpellSlot.Q,
+                SpellName = "UrgotHeatseekingLineMissile",
+                SpellType = SpellType.Line,
+                CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions },
+                FixedRange = true,
+            });
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Urgot",
+                Dangerlevel = SpellDangerLevel.Normal,
+                MissileName = "UrgotPlasmaGrenadeBoom",
+                Name = "Plasma Grenade",
+                ProjectileSpeed = 1750,
+                Radius = 250,
+                Range = 900,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.E,
+                SpellName = "UrgotPlasmaGrenade",
+                SpellType = SpellType.Circular,
+
+            });
+            #endregion Urgot
+
+            #region Varus
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Varus",
+                Dangerlevel = SpellDangerLevel.Low,
+                Name = "Varus E",
+                MissileName = "VarusEMissile",
+                ProjectileSpeed = 1500,
+                Radius = 235,
+                Range = 925,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.E,
+                SpellName = "VarusE",
+                ExtraSpellNames = new []{ "VarusEMissile" },
+                SpellType = SpellType.Circular,
+
+            });
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Varus",
+                Dangerlevel = SpellDangerLevel.Normal,
+                MissileName = "VarusQMissile",
+                Name = "VarusQMissile",
+                ProjectileSpeed = 1900,
+                Radius = 75,
+                Range = 1525,
+                SpellDelay = 0,
+                SpellKey = SpellSlot.Q,
+                SpellName = "VarusQ",
+                SpellType = SpellType.Line,
+            });
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Varus",
+                Dangerlevel = SpellDangerLevel.High,
+                Name = "VarusR",
+                MissileName = "VarusRMissile",
+                ProjectileSpeed = 1950,
+                Radius = 120,
+                Range = 1250,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.R,
+                SpellName = "VarusR",
+                SpellType = SpellType.Line,
+                CollisionObjects = new[] { CollisionObjectType.EnemyChampions, },
+                FixedRange = true,
+            });
+            #endregion Varus
+
+            #region Veigar
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Veigar",
+                Dangerlevel = SpellDangerLevel.Normal,
+                Name = "VeigarBalefulStrike",
+                Radius = 70,
+                Range = 950,
+                SpellDelay = 250,
+                ProjectileSpeed = 2200,
+                SpellKey = SpellSlot.Q,
+                SpellName = "VeigarBalefulStrike",
+                MissileName = "VeigarBalefulStrikeMis",
+                SpellType = SpellType.Line,
+                FixedRange = true,
+            });
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Veigar",
+                Dangerlevel = SpellDangerLevel.Normal,
+                MissileName = "VeigarDarkMatter",
+                Name = "VeigarDarkMatter",
+                Radius = 225,
+                Range = 900,
+                SpellDelay = 1350,
+                SpellKey = SpellSlot.W,
+                SpellName = "VeigarDarkMatter",
+                SpellType = SpellType.Circular,
+                
+            });
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Veigar",
+                Dangerlevel = SpellDangerLevel.High,
+                Name = "VeigarEventHorizon",
+                Radius = 425,
+                Range = 700,
+                SpellDelay = 500,
+                ExtraEndTime = 3500,
+                SpellKey = SpellSlot.E,
+                SpellName = "VeigarEventHorizon",
+                SpellType = SpellType.Circular,
+                DefaultOff = true,
+            });
+
+            #endregion Veigar
+
+            #region Velkoz
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Velkoz",
+                Dangerlevel = SpellDangerLevel.Normal,
+                Name = "VelkozE",
+                ProjectileSpeed = 1500,
+                Radius = 225,
+                Range = 950,
+                SpellKey = SpellSlot.E,
+                SpellName = "VelkozE",
+                SpellType = SpellType.Circular,
+
+            });
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Velkoz",
+                Dangerlevel = SpellDangerLevel.Low,
+                MissileName = "VelkozWMissile",
+                Name = "VelkozW",
+                ProjectileSpeed = 1700,
+                Radius = 90,
+                Range = 1150,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.W,
+                SpellName = "VelkozW",
+                SpellType = SpellType.Line,
+                FixedRange = true,
+            });
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Velkoz",
+                Dangerlevel = SpellDangerLevel.Normal,
+                Name = "VelkozQMissileSplit",
+                ProjectileSpeed = 2100,
+                Radius = 45,
+                Range = 1100,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.Q,
+                SpellName = "VelkozQMissileSplit",
+                SpellType = SpellType.Line,
+                UsePackets = true,
+                CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions },
+
+            });
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Velkoz",
+                Dangerlevel = SpellDangerLevel.Normal,
+                Name = "VelkozQ",
+                ProjectileSpeed = 1300,
+                Radius = 50,
+                Range = 1250,
+                SpellDelay = 250f,
+                SpellKey = SpellSlot.Q,
+                MissileName = "VelkozQMissile",
+                SpellName = "VelkozQ",
+                SpellType = SpellType.Line,
+                CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions },
+                FixedRange = true,
+            });
+            #endregion Velkoz
+
+            #region Vi
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Vi",
+                Dangerlevel = SpellDangerLevel.High,
+                Name = "ViQMissile",
+                ProjectileSpeed = 1500,
+                Radius = 90,
+                Range = 725,
+                SpellKey = SpellSlot.Q,
+                SpellName = "ViQMissile",
+                SpellType = SpellType.Line,
+                UsePackets = true,
+                DefaultOff = true,
+                CollisionObjects = new[] { CollisionObjectType.EnemyChampions, },
+
+            });
+            #endregion Vi
+
+            #region Viktor
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Viktor",
+                Dangerlevel = SpellDangerLevel.Normal,
+                MissileName = "ViktorDeathRayMissile",
+                Name = "ViktorDeathRay",
+                ProjectileSpeed = 1050,
+                Radius = 75,
+                Range = 815,
+                SpellKey = SpellSlot.E,
+                SpellName = "ViktorDeathRay",
+                ExtraMissileNames = new[] { "ViktorEAugMissile", },
+                SpellType = SpellType.Line,
+                UsePackets = true,
+                FixedRange = true,
+            });
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Viktor",
+                Dangerlevel = SpellDangerLevel.Normal,
+                Name = "ViktorDeathRay3",
+                ProjectileSpeed = float.MaxValue,
+                SpellDelay = 500,
+                Radius = 75,
+                Range = 815,
+                SpellKey = SpellSlot.E,
+                SpellName = "ViktorDeathRay3",
+                SpellType = SpellType.Line,   
+                UsePackets = true,
+                FixedRange = true,
+            });
+
+            /*Spells.Add(
+            new SpellData
+            {
+                CharName = "Viktor",
+                Dangerlevel = SpellDangerLevel.Normal,
+                MissileName = "ViktorDeathRayMissile2",
+                Name = "ViktorDeathRay2",
+                ProjectileSpeed = 1500,
+                Radius = 80,
+                Range = 800,
+                SpellKey = SpellSlot.E,
+                SpellName = "ViktorDeathRay2",
+                SpellType = SpellType.Line,
+                UsePackets = true,
+
+            });*/
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Viktor",
+                Dangerlevel = SpellDangerLevel.Normal,
+                Name = "GravitonField",
+                Radius = 300,
+                Range = 625,
+                SpellDelay = 1500,
+                SpellKey = SpellSlot.W,
+                SpellName = "ViktorGravitonField",
+                SpellType = SpellType.Circular,
+                DefaultOff = true,
+            });
+
+            #endregion Viktor
+
+            #region Vladimir
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Vladimir",
+                Dangerlevel = SpellDangerLevel.High,
+                Name = "VladimirHemoplague",
+                Radius = 375,
+                Range = 700,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.R,
+                SpellName = "VladimirHemoplague",
+                SpellType = SpellType.Circular,
+
+            });
+            #endregion Vladimir
+
+            #region Xerath
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Xerath",
+                Dangerlevel = SpellDangerLevel.Normal,
+                MissileName = "XerathArcaneBarrage2",
+                Name = "XerathArcaneBarrage2",
+                Radius = 280,
+                Range = 1100,
+                SpellDelay = 750,
+                SpellKey = SpellSlot.W,
+                SpellName = "XerathArcaneBarrage2",
+                SpellType = SpellType.Circular,
+                ExtraDrawHeight = 45,
+            });
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Xerath",
+                Dangerlevel = SpellDangerLevel.High,
+                MissileName = "XerathArcanopulse2",
+                Name = "XerathArcanopulse2",
+                ProjectileSpeed = float.MaxValue,
+                Radius = 70,
+                Range = 1525,
+                SpellDelay = 500,
+                SpellKey = SpellSlot.Q,
+                SpellName = "XerathArcanopulse2",
+                UseEndPosition = true,
+                SpellType = SpellType.Line,
+            });
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Xerath",
+                Dangerlevel = SpellDangerLevel.Normal,
+                Name = "XerathLocusOfPower2",
+                MissileName = "XerathLocusPulse",
+                Radius = 200,
+                Range = 5600,
+                SpellDelay = 600,
+                SpellKey = SpellSlot.R,
+                SpellName = "XerathRMissileWrapper",
+                ExtraSpellNames = new []{ "XerathLocusPulse" },
+                SpellType = SpellType.Circular
+            });
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Xerath",
+                Dangerlevel = SpellDangerLevel.High,
+                MissileName = "XerathMageSpearMissile",
+                Name = "XerathMageSpear",
+                ProjectileSpeed = 1600,
+                SpellDelay = 200,
+                Radius = 60,
+                Range = 1125,
+                SpellKey = SpellSlot.E,
+                SpellName = "XerathMageSpear",
+                SpellType = SpellType.Line,
+                CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions },
+                FixedRange = true,
+            });
+            #endregion Xerath
+
+            #region Yasuo
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Yasuo",
+                Dangerlevel = SpellDangerLevel.High,
+                MissileName = "YasuoQ3Mis",
+                Name = "Steel Tempest3",
+                ProjectileSpeed = 1250,
+                Radius = 90,
+                Range = 1100,
+                SpellDelay = 300,
+                SpellKey = SpellSlot.Q,
+                SpellName = "YasuoQ3W",
+                ExtraSpellNames = new []{ "YasuoQ3" },
+                SpellType = SpellType.Line,
+                FixedRange = true,
+            });
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Yasuo",
+                Dangerlevel = SpellDangerLevel.Normal,
+                MissileName = "yasuoq",
+                Name = "Steel Tempest",
+                ProjectileSpeed = float.MaxValue,
+                Radius = 40,
+                Range = 500,
+                SpellDelay = 400,
+                SpellKey = SpellSlot.Q,
+                SpellName = "YasuoQ",
+                ExtraMissileNames = new[] { "yasuoq2" },
+                ExtraSpellNames = new [] {"YasuoQ2", "YasuoQ2W" },
+                SpellType = SpellType.Line
+                FixedRange = true,
+            });
+
+           /* #endregion Yasuo
+
+            #region Zac
+
+            Spells.Add(
+                new SpellData
+                {
+                    CharName = "Zac",
+                    Dangerlevel = SpellDangerLevel.Normal,
+                    Name = "ZacQ",
+                    ProjectileSpeed = float.MaxValue,
+                    FixedRange = true,
+                    Radius = 120,
+                    Range = 550,
+                    SpellDelay = 500,
+                    SpellKey = SpellSlot.Q,
+                    SpellName = "ZacQ",
+                    ExtraSpellNames = new[] {"YasuoQ2", "YasuoQ2W"},
+                    SpellType = SpellType.Line
+                    FixedRange = true,
+                });
+            
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Zac",
+                Dangerlevel = SpellDangerLevel.High,
+                Name = "Elastic Slingshot [Beta]",
+                ProjectileSpeed = 1000,
+                Radius = 300,
+                Range = 1800,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.E,
+                SpellName = "ZacE",
+                SpellType = SpellType.Circular,
+            });
+
+            #endregion Zac
+
+            #region Zed
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Zed",
+                Dangerlevel = SpellDangerLevel.Normal,
+                MissileName = "ZedQMissile",
+                Name = "ZedQ",                
+                ProjectileSpeed = 1700,
+                Radius = 50,
+                Range = 925,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.Q,
+                SpellName = "ZedQ",
+                SpellType = SpellType.Line,
+            });
+            
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Zed",
+                Dangerlevel = SpellDangerLevel.High,
+
+                Name = "ZedQ",                
+                ProjectileSpeed = 1750,
+                Radius = 250,
+                Range = 700,
+                SpellDelay = 0,
+                SpellKey = SpellSlot.W,
+                SpellName = "ZedW",
+                SpellType = SpellType.Line,
+            });
+            /*Spells.Add(
+            new SpellData
+            {
+                CharName = "Zed",
+                Dangerlevel = SpellDangerLevel.Low,
+                Name = "ZedE",
+                Radius = 290,
+                Range = 290,
+                SpellKey = SpellSlot.E,
+                SpellName = "ZedE",
+                SpellType = SpellType.Circular,
+                IsSpecial = true,
+                DefaultOff = true,
+            });*/
+
+            /*#endregion Zed
+
+            #region Ziggs
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Ziggs",
+                Dangerlevel = SpellDangerLevel.Low,
+                MissileName = "ZiggsE",
+                Name = "ZiggsE",
+                ProjectileSpeed = 3000,
+                Radius = 235,
+                Range = 2000,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.E,
+                SpellName = "ZiggsE",
+                SpellType = SpellType.Circular,
+
+            });
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Ziggs",
+                Dangerlevel = SpellDangerLevel.Low,
+                MissileName = "ZiggsW",
+                Name = "ZiggsW",
+                ProjectileSpeed = 3000,
+                Radius = 275,
+                Range = 2000,
+                SpellDelay = 250,
+                ExtraEndTime = 1000,
+                SpellKey = SpellSlot.W,
+                SpellName = "ZiggsW",
+                SpellType = SpellType.Circular,
+
+            });
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Ziggs",
+                Dangerlevel = SpellDangerLevel.Normal,
+                Name = "ZiggsQ",
+                ProjectileSpeed = 1700,
+                Radius = 150,
+                Range = 850,                
+                SpellDelay = 250,
+                SpellKey = SpellSlot.Q,
+                SpellName = "ZiggsQ",
+                SpellType = SpellType.Circular,
+                IsSpecial = true,
+                NoProcess = true,
+            });
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Ziggs",
+                Dangerlevel = SpellDangerLevel.Extreme,
+                MissileName = "ZiggsR",
+                Name = "ZiggsR",
+                ProjectileSpeed = 1500,
+                Radius = 550,
+                Range = 5300,
+                SpellDelay = 400,
+                SpellKey = SpellSlot.R,
+                SpellName = "ZiggsR",
+                SpellType = SpellType.Circular,
+                DefaultOff = true,
+                IsSpecial = true,
+            });
+            #endregion Ziggs
+
+            #region Zilean
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Zilean",
+                Dangerlevel = SpellDangerLevel.Normal,
+                MissileName = "ZileanQMissile",
+                Name = "ZileanQ",
+                ProjectileSpeed = 2000,
+                Radius = 150,
+                Range = 900,
+                SpellDelay = 650,
+                SpellKey = SpellSlot.Q,
+                SpellName = "ZileanQ",
+                SpellType = SpellType.Circular,
+                IsSpecial = true,
+            });
+
+            #endregion Zilean
+
+            #region Zyra
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Zyra",
+                Dangerlevel = SpellDangerLevel.High,
+                MissileName = "ZyraEMissile",
+                Name = "Grasping Roots",
+                ProjectileSpeed = 1400, //1150
+                Radius = 70,
+                Range = 1150,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.E,
+                SpellName = "ZyraE",
+                SpellType = SpellType.Line,
+                FixedRange = true,
+
+            });
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Zyra",
+                Dangerlevel = SpellDangerLevel.Normal,
+                MissileName = "ZyraPassiveDeathManager",
+                Name = "Zyra Passive",
+                ProjectileSpeed = 1900,
+                Radius = 70,
+                Range = 1474,
+                SpellDelay = 500,
+                SpellKey = SpellSlot.Q,
+                SpellName = "ZyraPassivDeathManager",
+                SpellType = SpellType.Line,
+
+            });
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Zyra",
+                Dangerlevel = SpellDangerLevel.Normal,
+                MissileName = "ZyraQ",
+                Name = "Deadly Bloom",
+                Radius = 140,
+                Range = 825,
+                SpellDelay = 850,
+                SpellKey = SpellSlot.Q,
+                SpellName = "ZyraQ",
+                SpellType = SpellType.Circular,
+                SecondaryRadius = 400,
+
+            });
+
+            /*Spells.Add(
+            new SpellData
+            {
+                CharName = "Zyra",
+                Dangerlevel = SpellDangerLevel.Extreme,
+                Name = "ZyraR",
+                Radius = 525,
+                Range = 700,
+                SpellDelay = 500,
+                SpellKey = SpellSlot.R,
+                SpellName = "ZyraBrambleZone",
+                SpellType = SpellType.Circular,
+
+            });*/
+            //#endregion Zyra
+              
 
 
 
