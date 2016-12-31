@@ -2561,7 +2561,139 @@ public static class SpellDatabase
 
             });
             #endregion Pantheon
+            #region Poppy
 
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Poppy",
+                Dangerlevel = SpellDangerLevel.Normal,
+                MissileName = "PoppyQ",
+                Name = "Hammer Shock",
+                Radius = 100,
+                Range = 450,
+                SpellDelay = 500,
+                SpellKey = SpellSlot.Q,
+                SpellName = "PoppyQ",
+                SpellType = SpellType.Line,
+            });
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Poppy",
+                Dangerlevel = SpellDangerLevel.High,
+                Name = "Keeper's Verdict",
+                Radius = 200,
+                Range = 450,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.R,
+                SpellName = "PoppyRSpellInstant",
+                SpellType = SpellType.Line,
+            });
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Poppy",
+                Dangerlevel = SpellDangerLevel.High,
+                Name = "Keeper's Verdict",
+                Radius = 100,
+                Range = 1150,
+                ProjectileSpeed = 1750,
+                SpellDelay = 300,
+                SpellKey = SpellSlot.R,
+                SpellName = "PoppyRSpell",
+                MissileName = "PoppyRMissile",
+                SpellType = SpellType.Line,
+                FixedRange = true,
+            });
+            #endregion
+
+            #region Quinn
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Quinn",
+                Dangerlevel = SpellDangerLevel.Normal,
+                MissileName = "QuinnQ",
+                Name = "QuinnQ",
+                ProjectileSpeed = 1550,
+                Radius = 80,
+                Range = 1050,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.Q,
+                SpellName = "QuinnQ",
+                SpellType = SpellType.Line,
+                CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions },
+                FixedRange = true,
+            });
+            #endregion Quinn
+
+            #region RekSai
+
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "RekSai",
+                Dangerlevel = SpellDangerLevel.Normal,
+                MissileName = "RekSaiQBurrowedMis",
+                Name = "RekSaiQ",
+                ProjectileSpeed = 1950,
+                Radius = 65,
+                Range = 1500,
+                SpellDelay = 125,
+                SpellKey = SpellSlot.Q,
+                SpellName = "ReksaiQBurrowed",
+                SpellType = SpellType.Line,
+                CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions },
+
+            });
+            #endregion RekSai
+
+            #region Rengar
+            
+            
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Rengar",
+                Dangerlevel = SpellDangerLevel.High,
+                Name = "Savagery [Beta]",
+                Radius = 150,
+                Range = 500,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.Q,
+                SpellName = "RengarQ2",
+                ExtraSpellNames = new[] { "RengarQ2Emp" },
+                SpellType = SpellType.Line,
+            });
+            
+            Spells.Add(
+            new SpellData
+            {
+                CharName = "Rengar",
+                Dangerlevel = SpellDangerLevel.Normal,
+                MissileName = "RengarEFinal",
+                Name = "Bola Strike",
+                ProjectileSpeed = 1500,
+                Radius = 70,
+                Range = 1000,
+                SpellDelay = 250,
+                SpellKey = SpellSlot.E,
+                SpellName = "RengarE",
+                SpellType = SpellType.Line,
+                ExtraSpellNames = new []{ "RengarEEmp" },
+                ExtraMissileNames = new []{ "RengarEFinalMAX","RengerEEmpMis", "RengarEMis" },
+                CollisionObjects = new[] { CollisionObjectType.EnemyChampions, CollisionObjectType.EnemyMinions },
+
+            });
+
+            #endregion Rengar
+
+            
+            
             
 
            
