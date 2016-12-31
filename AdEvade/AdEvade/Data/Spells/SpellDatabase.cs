@@ -3604,7 +3604,7 @@ public static class SpellDatabase
 
             #endregion Viktor
 
-            /*#region Vladimir
+            #region Vladimir
 
             Spells.Add(
             new SpellData
@@ -3692,7 +3692,7 @@ public static class SpellDatabase
             });
             #endregion Xerath
 
-            #region Yasuo
+            /*#region Yasuo
 
             Spells.Add(
             new SpellData
